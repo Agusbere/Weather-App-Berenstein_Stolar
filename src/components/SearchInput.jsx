@@ -9,6 +9,7 @@ export default function SearchInput() {
             name='city'
             id='city'
             placeholder='Search city...'
+            autoComplete='off'
          />
          <input type='submit' value='' style={{ display: 'none' }} />
       </form>

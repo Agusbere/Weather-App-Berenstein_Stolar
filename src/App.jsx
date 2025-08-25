@@ -10,18 +10,21 @@ import CityCard from './components/CityCard';
 
 function App() {
    const [data, setData] = useState(null);
+   const loadInfo = async (city) => {
+      const weather = await getWeather(city);
+      setData(weather);
+   };
    useEffect(() => {
       const q = new URLSearchParams(window.location.search);
       const city = q.get('city');
       if (!city) location.href = '/?city=Helsinki';
-      setData(getWeather());
-      console.log(getWeather());
+      loadInfo(city);
    }, []);
    // const params = usepara
    if (!data)
       return (
          <>
-            <h1>Loading...</h1>
+            <h1 style={{ color: 'white' }}>Loading...</h1>
          </>
       );
    return (
