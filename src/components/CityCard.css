@@ -1,0 +1,14 @@
+.city-card {
+   width: 450px;
+   border-radius: 20px;
+   background-color: var(--bg-elements);
+   color: white;
+   padding: 20px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.city-card *{
+   margin: 0;
+}

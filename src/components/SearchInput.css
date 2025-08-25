@@ -1,0 +1,20 @@
+.search-component {
+   background-color: var(--bg-elements);
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   padding: 10px;
+   border-radius: 20px;
+   width: 300px;
+}
+
+.search-component * {
+   color: var(--color1);
+}
+
+.search-component > input {
+   all: unset;
+   color: white;
+   height: 24px;
+   flex: 1;
+}

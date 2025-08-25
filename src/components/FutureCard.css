@@ -1,3 +1,23 @@
-.future-card{
-    background-color: lightblue;
+.future-card {
+   background-color: var(--bg-elements);
+   color: white;
+   padding: 10px;
+   border-radius: 20px;
+   text-align: center;
+}
+
+.future-card .separator {
+   display: block;
+   height: 2px;
+   background-color: #111628;
+}
+
+.future-card .time-state {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.future-card .time-state p {
+   font-weight: lighter;
 }
