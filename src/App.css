@@ -1,0 +1,19 @@
+body{
+    background-image: url("./bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.period{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.period :nth-child(n+9){
+    display: none;
+}
+
+img{
+    width: 50px;
+}
